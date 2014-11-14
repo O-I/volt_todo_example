@@ -3,3 +3,10 @@
 
 <:Body>
   <h1>Todo List</h1>
+
+  <form e-submit="add_todo" role="form">
+    <div class="form-group">
+      <label>Todo</label>
+      <input class="form-control" type="text" value=" {{ page._new_todo }}"/>
+    </div>
+  </form>
