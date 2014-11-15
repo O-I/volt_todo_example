@@ -1,3 +1,3 @@
-# Start your docs here.
+# Volt Todos Example App
 
-# See Volt docs at https://github.com/voltrb/volt/blob/master/Readme.md
+An example todo app built using the [Volt](http://voltframework.com) framework and following the steps in the tutorial in their [documentation](http://voltframework.com/docs).
