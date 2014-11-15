@@ -16,6 +16,10 @@ class MainController < Volt::ModelController
     page._todos.delete(todo)
   end
 
+  def current_todo
+    page._todos[params._index.or(0).to_i]
+  end
+
   private
 
   # the main template contains a #template binding that shows another
