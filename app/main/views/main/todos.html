@@ -8,7 +8,7 @@
       <h1>Todo List</h1>
 
       <table class="table">
-        {{ page._todos.each do |todo| }}
+        {{ _todos.each do |todo| }}
         <!-- Use params to store the current index -->
         <tr e-click="params._index = index"
             class="{{ if params._index.or(0).to_i == index }}selected{{ end }}">
