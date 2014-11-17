@@ -7,6 +7,14 @@
 
       <h1>Todo List ({{ _todos.size }})</h1>
 
+      <button e-click="check_all">Check All ({{ incomplete }})</button>
+
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: {{ percent_complete }}%;">
+          {{ percent_complete }}%
+        </div>
+      </div>
+
       <table class="table">
         {{ _todos.each do |todo| }}
         <!-- Use params to store the current index -->
