@@ -22,6 +22,22 @@ class MainController < Volt::ModelController
     _todos[params._index.or(0).to_i]
   end
 
+  def check_all
+    _todos.each { |todo| todo._completed = true }
+  end
+
+  def completed
+    _todos.count { |todo| todo._completed }
+  end
+
+  def incomplete
+    _todos.size - completed
+  end
+
+  def percent_complete
+    (completed / _todos.size.to_f * 100).round
+  end
+
   private
 
   # the main template contains a #template binding that shows another
