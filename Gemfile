@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
+ruby '2.1.5'
 
 gem 'volt', '0.8.21'
-
 
 # The following gem's are optional for themeing
 
@@ -10,7 +10,6 @@ gem 'volt-bootstrap'
 
 # Simple theme for bootstrap, remove to theme yourself.
 gem 'volt-bootstrap-jumbotron-theme'
-
 
 # Server for MRI
 platform :mri do
@@ -22,7 +21,6 @@ end
 platform :jruby do
   gem 'jubilee'
 end
-
 
 #---------------------
 # Needed at the moment
